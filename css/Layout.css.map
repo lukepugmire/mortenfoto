@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,gBAAgB,EAAE,KAAK;CACxB",
+    "sources": [
+        "../src/sass/Layout.scss"
+    ],
+    "names": [],
+    "file": "Layout.css"
+}

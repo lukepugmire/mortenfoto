@@ -1,0 +1,70 @@
+.login_container {
+  margin-top: 4rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login_form {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    fieldset {
+      padding: 3%;
+      background-color: $background-dark;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border: none;
+      div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0.5rem;
+        .form_element {
+          margin: 2%;
+          padding: 2%;
+        }
+        span {
+          color: red;
+        }
+      }
+      button {
+        background-color: $logo-default;
+        color: $background-2;
+        font-weight: bold;
+        width: 40%;
+        margin-top: 2%;
+        margin-bottom: 20px;
+        border: none;
+        padding: 0.8rem;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: josefin sans;
+        letter-spacing: 4px;
+        cursor: pointer;
+        transition: 1s;
+      }
+      button:hover {
+        background-color: $background-2;
+        color: $logo-default;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 900px) {
+  .login_container {
+    .login_form {
+      width: 40%;
+      fieldset {
+        max-width: 550px;
+      }
+    }
+  }
+}

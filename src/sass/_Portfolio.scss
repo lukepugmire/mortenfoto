@@ -1,0 +1,293 @@
+.portfolio_container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //PORTFOLIO CAROUSEL START
+  .carousel_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    .alice-carousel {
+      max-width: 100%;
+    }
+    .item {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+    }
+    .item1 {
+      background-image: url(../imgs/carousel/img1.jpg);
+    }
+    .item2 {
+      background-image: url(../imgs/carousel/img2.jpg);
+    }
+    .item3 {
+      background-image: url(../imgs/carousel/img3.jpg);
+    }
+    .item4 {
+      background-image: url(../imgs/carousel/img4.jpg);
+    }
+    .item5 {
+      background-image: url(../imgs/carousel/img5.jpg);
+    }
+    .item6 {
+      background-image: url(../imgs/carousel/img6.jpg);
+    }
+    .item7 {
+      background-image: url(../imgs/carousel/img7.jpg);
+    }
+    .item8 {
+      background-image: url(../imgs/carousel/img8.jpg);
+    }
+    .item9 {
+      background-image: url(../imgs/carousel/img9.jpg);
+    }
+    .item10 {
+      background-image: url(../imgs/carousel/img10.jpg);
+    }
+    .item11 {
+      background-image: url(../imgs/carousel/img11.jpg);
+    }
+    .item12 {
+      background-image: url(../imgs/carousel/img12.jpg);
+    }
+    .item13 {
+      background-image: url(../imgs/carousel/img13.jpg);
+    }
+    .item14 {
+      background-image: url(../imgs/carousel/img14.jpg);
+    }
+    .item15 {
+      background-image: url(../imgs/carousel/img15.jpg);
+    }
+    .item16 {
+      background-image: url(../imgs/carousel/img16.jpg);
+    }
+    .thumbs {
+      max-width: 90%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0rem;
+      .item {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 50px;
+      }
+      .item:hover {
+        opacity: 0.7;
+      }
+      .thumb {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    .thumbs .alice-carousel__stage {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .thumbs .btn-prev {
+      cursor: pointer;
+      font-size: 24px;
+      padding: 2%;
+    }
+    .thumbs .btn-next {
+      cursor: pointer;
+      font-size: 24px;
+      padding: 2%;
+    }
+  }
+  //PORTFOLIO CAROUSEL END
+  //GALLERY LINK FOR ALL GALLERIES Start
+  .gallery_link {
+    text-decoration: none;
+    color: $nav-links;
+    text-transform: uppercase;
+    font-family: Open Sans Condensed;
+    letter-spacing: 4px;
+    transition: 2s ease;
+    display: inline-block;
+    position: relative;
+  }
+  .gallery_link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: $nav-links;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+  }
+  .gallery_link:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  //GALLERY LINK FOR ALL GALLERIES End
+  //WEDDINGS CONTAINER Start
+  .weddings_container {
+    margin-bottom: 6rem;
+    border-bottom: 1px solid $nav-links;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    .wedding_gallery {
+      width: 300px;
+      height: 430px;
+      margin: 25px;
+      h2 {
+        text-decoration: underline;
+      }
+      p {
+        font-size: 14px;
+      }
+      .wedding_card_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 180px;
+      }
+    }
+    .wedding_gallery_1 .wedding_card_img {
+      background-image: url(../imgs/henriette_anders/img5.jpg);
+    }
+
+    .wedding_gallery_2 .wedding_card_img {
+      background-image: url(../imgs/tore_renate/img40.jpg);
+    }
+  }
+  //WEDDINGS CONTAINER end
+  //FILMS CONTAINER Start
+  .Film_heading {
+    font-size: 36px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-family: Cormorant + Garamond;
+    text-decoration: underline 1px $nav-links;
+    text-underline-offset: 1rem;
+  }
+  .film_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    border-bottom: 1px solid $nav-links;
+
+    .example_film {
+      display: flex;
+      justify-content: center;
+      iframe {
+        width: 400px;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .film_container_text {
+      width: 300px;
+      margin: 25px;
+      .heading {
+        display: none;
+      }
+    }
+  }
+  //FILMS CONTAINER End
+  //KONFIRMASJONS CONTAINER Start
+  //KONFIRMASJONS CONTAINER End
+}
+
+@media only screen and (min-width: 800px) {
+  .portfolio_container {
+    //PORTFOLIO CAROUSEL START
+    .carousel_container {
+      width: 90%;
+      .item {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+      }
+      .item7 {
+        background-image: url(../imgs/carousel/img7.jpg);
+      }
+      .item10 {
+        background-image: url(../imgs/carousel/img10.jpg);
+      }
+      .item12 {
+        background-image: url(../imgs/carousel/img12.jpg);
+      }
+      .thumbs {
+        height: 100px;
+        width: 100%;
+        .thumb {
+          width: 180px;
+          .item {
+            height: 100px;
+            width: 180px;
+          }
+        }
+      }
+    }
+    //PORTFOLIO CAROUSEL END
+    //WEDDINGS CONTAINER START
+    .weddings_container {
+      justify-content: space-around;
+      width: 1200px;
+      .wedding_gallery {
+        width: 350px;
+        height: 450px;
+        margin: 25px;
+        h2 {
+          text-decoration: underline;
+          font-size: 28px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    //WEDDINGS CONTAINER END
+    //FILMS CONTAINER Start
+    .Film_heading {
+      display: none;
+    }
+    .film_container {
+      width: 1200px;
+      justify-content: space-around;
+      .example_film {
+        margin: 25px 0px;
+        iframe {
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .film_container_text {
+        width: 350px;
+        margin: 25px 0px;
+        padding-left: 1rem;
+        .heading {
+          display: block;
+        }
+      }
+    }
+    //FILMS CONTAINER End
+  }
+}

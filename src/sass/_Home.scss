@@ -1,0 +1,213 @@
+.home_container {
+  .home_slider {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    .home_carousel {
+      width: 100%;
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .home_carousel_img1 {
+      background-image: url(../imgs/homeCarousel/wheat-mobile.jpg);
+    }
+    .home_carousel_img2 {
+      background-image: url(../imgs/homeCarousel/beach-mobile.jpg);
+    }
+    .home_carousel_img3 {
+      background-image: url(../imgs/homeCarousel/car-2.jpg);
+    }
+    .home_carousel_img4 {
+      background-image: url(../imgs/homeCarousel/flowers-mobile.jpg);
+    }
+  }
+  //HOME NAVIGATION Start
+  .home_navigation {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    .home_grid {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      justify-self: center;
+    }
+    .home_logo {
+      grid-row-start: 2;
+      grid-row-start: 2;
+      cursor: pointer;
+      .logo_text_lg {
+        font-family: Monsieur La Doulaise;
+        margin: 0;
+        font-size: 52px;
+        color: $text;
+      }
+      .logo_text_sm {
+        font-family: Cormorant Garamond;
+        margin: -7% 0% 0% 0%;
+        font-size: 18px;
+        letter-spacing: 12px;
+        color: $text;
+      }
+    }
+    .home_call_to_action {
+      grid-row-start: 17;
+      grid-row-start: 17;
+      .call_to_action {
+        text-decoration: none;
+        background-color: $background-2;
+        opacity: 0.8;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        color: $text;
+        font-weight: bold;
+        font-size: 36px;
+        font-family: Cormorant Garamond;
+        transition: 1s;
+      }
+      .call_to_action:hover {
+        color: $logo-default;
+        background-color: $background-dark;
+      }
+    }
+    .home_nav_links {
+      grid-row-start: 22;
+      grid-row-start: 22;
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      .nav_link {
+        text-decoration: none;
+        color: $background-dark;
+        font-family: Open Sans Condensed;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: 1s ease;
+        display: inline-block;
+        position: relative;
+      }
+      .nav_link:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: $text;
+        transform-origin: center;
+        transition: transform 0.25s ease-out;
+      }
+      .nav_link:hover:after {
+        transform: scaleX(1);
+        transform-origin: center;
+      }
+    }
+    .home_icons {
+      grid-row-start: 24;
+      grid-row-start: 24;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      a {
+        color: $background-dark;
+        transition: 0.5s;
+        margin: 0% 4%;
+      }
+      a:hover {
+        color: $nav-background;
+      }
+    }
+  }
+  //HOME NAVIGATION End
+}
+
+@media only screen and (min-width: 600px) {
+  .home_container {
+    .home_slider {
+      .home_carousel {
+      }
+      .home_carousel_img1 {
+        background-image: url(../imgs/homeCarousel/wheat.jpg);
+      }
+      .home_carousel_img2 {
+        background-image: url(../imgs/homeCarousel/beach.jpg);
+      }
+      .home_carousel_img3 {
+        background-image: url(../imgs/homeCarousel/car.jpg);
+      }
+      .home_carousel_img4 {
+        background-image: url(../imgs/homeCarousel/flowers.jpg);
+      }
+    }
+    //HOME NAVIGATION Start
+    .home_navigation {
+      .home_grid {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .home_logo {
+        grid-row-start: 3;
+        grid-row-start: 3;
+        .logo_text_lg {
+          font-size: 64px;
+        }
+        .logo_text_sm {
+          font-size: 22px;
+        }
+      }
+      .home_call_to_action {
+        .call_to_action {
+        }
+        .call_to_action:hover {
+          color: $logo-default;
+          background-color: $background-dark;
+        }
+      }
+      .home_nav_links {
+        grid-row-start: 20;
+        grid-row-start: 20;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        .nav_link {
+          font-size: 22px;
+        }
+      }
+    }
+    //HOME NAVIGATION End
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .home_container {
+    //HOME NAVIGATION Start
+    .home_navigation {
+      .home_grid {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .home_logo {
+        grid-row-start: 3;
+        grid-row-start: 3;
+        .logo_text_lg {
+          font-size: 120px;
+        }
+        .logo_text_sm {
+          font-size: 42px;
+          letter-spacing: 24px;
+        }
+      }
+    }
+    //HOME NAVIGATION End
+  }
+}

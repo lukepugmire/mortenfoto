@@ -1,0 +1,181 @@
+.navigation_bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  background-color: $background-1;
+  .nav_logo {
+    position: fixed;
+    top: 1.5%;
+    left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    .logo_text_lg {
+      font-family: Monsieur La Doulaise;
+      margin: 0;
+      font-size: 32px;
+      color: $text;
+    }
+    .logo_text_sm {
+      font-family: Cormorant Garamond;
+      margin: -5% 0% 0% 0%;
+      font-size: 12px;
+      letter-spacing: 8px;
+      color: $text;
+    }
+  }
+  .nav_links {
+    list-style: none;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    .nav_item {
+      text-decoration: none;
+      .nav_link {
+        text-decoration: none;
+        color: $nav-links;
+        font-family: Open Sans Condensed;
+        font-size: 16px;
+        letter-spacing: 2px;
+        transition: 1s ease;
+        display: inline-block;
+        position: relative;
+      }
+      .nav_link:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -5px;
+        left: 0;
+        background-color: $nav-links;
+        transform-origin: center;
+        transition: transform 0.25s ease-out;
+      }
+      .nav_link:hover:after {
+        transform: scaleX(1);
+        transform-origin: center;
+      }
+    }
+  }
+  .burger {
+    display: none;
+  }
+}
+.navigation_bar.active {
+  background-color: $background-dark;
+  transition: background-color 1s linear;
+  .nav_logo {
+    .logo_text_lg {
+      color: $logo-default;
+    }
+    .logo_text_sm {
+      color: $logo-default;
+    }
+  }
+  .nav_links {
+    .nav_item {
+      .nav_link {
+        color: $logo-default;
+      }
+    }
+    .nav_link:after {
+      background-color: $logo-default;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation_bar {
+    position: relative;
+    position: fixed;
+    top: 0;
+
+    .nav_logo {
+      z-index: 1;
+      position: fixed;
+      left: 8%;
+    }
+    .nav_links {
+      margin: 0;
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: $nav-links;
+      width: 100%;
+      min-height: 100vh;
+      transform: translateX(100%);
+      transition: 0.5s all;
+      border-left: 6px solid $nav-links;
+      .nav_item {
+        margin: 20px 0px;
+        margin-left: 12%;
+      }
+    }
+    .nav_links.active {
+      background: $nav-background;
+      transform: translateX(40%);
+    }
+    .burger {
+      height: 28px;
+      width: 28px;
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+      position: fixed;
+      top: 3.5%;
+      right: 4%;
+      .line {
+        background-color: $nav-links;
+        padding: 1.5px;
+        width: 90%;
+        margin: 5px 0px;
+        transition: 0.5s ease;
+      }
+      .line_1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+      }
+      .line_2 {
+        opacity: 0;
+      }
+      .line_3 {
+        transform: rotate(45deg) translate(-6.5px, -6.5px);
+      }
+    }
+    .burger:hover > .line_1_hover {
+      width: 40%;
+    }
+    .burger:hover > .line_2_hover {
+      width: 80%;
+    }
+    .burger:hover > .line_3_hover {
+      width: 60%;
+    }
+  }
+  .navigation_bar.active {
+    .burger {
+      .line {
+        background-color: $logo-default;
+      }
+    }
+    .nav_links {
+      .nav_item {
+        .nav_link {
+          color: $nav-links;
+        }
+      }
+      .nav_link:after {
+        background-color: $logo-default;
+      }
+    }
+  }
+}

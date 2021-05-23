@@ -1,0 +1,123 @@
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+nav .bm-menu {
+  position: fixed;
+  top: 0;
+  background: #be9c90;
+  font-size: 1.15em;
+  max-height: 100vh;
+  width: 100%;
+}
+
+nav .bm-menu .bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 90%;
+  max-width: 60%;
+}
+
+nav .bm-menu .bm-item {
+  text-decoration: none;
+  color: white;
+  margin: 6% 0%;
+}
+
+nav .logo {
+  z-index: 1;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+nav .logo .nav_logo {
+  margin-bottom: 3%;
+  margin-right: 50%;
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo .nav_logo .logo_text_lg {
+  margin: 0;
+  font-family: Monsieur La Doulaise;
+  font-size: 28px;
+  padding: 0;
+}
+
+nav .logo .nav_logo .logo_text_sm {
+  margin: -4%;
+  font-family: Cormorant Garamond;
+  letter-spacing: 6px;
+  font-size: 12px;
+  padding: 0;
+}
+
+nav .bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 15px;
+  right: 2rem;
+  top: 1.5rem;
+}
+
+nav .bm-burger-button .bm-burger-bars {
+  background: #707070;
+  width: 30px;
+  border-radius: 5px;
+}
+
+nav .bm-burger-button .bm-burger-bars-hover {
+  background: green;
+}
+
+nav .bm-cross-button {
+  height: 24px;
+  width: 24px;
+  background-color: red;
+}
+
+nav .bm-cross {
+  background: #707070;
+  min-height: 24px;
+}
+
+.nav_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+/*# sourceMappingURL=Nav.css.map */

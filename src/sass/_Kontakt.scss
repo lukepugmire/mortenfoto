@@ -1,0 +1,179 @@
+.contact_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .contact_container {
+    background-color: $background-2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20rem;
+    .kontakt_heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h1 {
+        font-size: 36px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        font-family: Cormorant + Garamond;
+        text-decoration: underline 1px $nav-links;
+        text-underline-offset: 0.5rem;
+      }
+      p {
+        margin: 0%;
+        text-align: center;
+        padding: 0 8%;
+      }
+    }
+
+    .contact_img {
+      position: absolute;
+      top: 5rem;
+      background-image: url(../imgs/kontakt/mobile.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+      min-height: 400px;
+      width: 100%;
+      z-index: -1;
+    }
+    .contact_info {
+      width: 70%;
+      .contact_form {
+        display: flex;
+        flex-direction: column;
+        .message_sent {
+          color: green;
+          display: none;
+        }
+        .message_failed {
+          color: red;
+          display: none;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5%;
+          .form-error {
+            display: none;
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 2px;
+          }
+          input {
+            height: 2.5rem;
+            border: none;
+          }
+          textarea {
+            border: none;
+            height: 6rem;
+          }
+          span {
+            color: red;
+          }
+        }
+        button {
+          background-color: $text;
+          color: $white-text;
+          font-weight: bold;
+          width: 40%;
+          margin-top: 8%;
+          margin-bottom: 20px;
+          border: none;
+          padding: 0.8rem;
+          text-transform: uppercase;
+          position: relative;
+          left: 60%;
+          font-size: 14px;
+          font-family: josefin sans;
+          letter-spacing: 4px;
+          cursor: pointer;
+          transition: 1s;
+        }
+        button:hover {
+          background-color: $logo-default;
+          color: $background-2;
+        }
+      }
+    }
+  }
+  .referanser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 5% 0%;
+    .quote {
+      width: 400px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4%;
+      p {
+        margin: 2%;
+        text-align: center;
+        flex: 1;
+      }
+      .customer {
+        font-size: 18px;
+        color: $styled-text;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .contact_box {
+    .contact_container {
+      flex-direction: row;
+      justify-content: center;
+      max-width: 1200px;
+      margin-top: 16rem;
+      .kontakt_heading {
+        position: absolute;
+        top: 6rem;
+        p {
+          font-size: 18px;
+        }
+      }
+      .contact_img {
+        background-image: url(../imgs/kontakt/website.jpg);
+        background-size: cover;
+        position: relative;
+        top: 0;
+        margin: 0%;
+        padding: 3%;
+        width: 80%;
+        height: 100%;
+        z-index: 0;
+        background-attachment: local;
+      }
+      .contact_info {
+        .contact_form {
+          flex: 1;
+          padding: 4%;
+          font-size: 18px;
+          button {
+            left: 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .referanser {
+      .quote {
+        p {
+          font-size: 18px;
+        }
+        .customer {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

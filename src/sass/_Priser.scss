@@ -1,0 +1,352 @@
+.price_container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  .blurb {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+    .price_blurb {
+      width: 100%;
+      text-align: center;
+      margin: 6px;
+      font-size: 14px;
+    }
+  }
+
+  //WEDDING PRICE CONTAINER Start
+  //PICTURE PRICE CONTAINER Start
+  .price_bryllup_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 28px;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      font-family: Cormorant + Garamond;
+      text-decoration: underline 1px $nav-links;
+      text-underline-offset: 1rem;
+      color: black;
+    }
+    .fotopakker_blurb {
+      width: 80%;
+      text-align: center;
+    }
+    .price_bryllup_img {
+      width: 100%;
+      height: 220px;
+      background-image: url(../imgs/misc/A14I8384.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .tilbehør_img {
+      width: 100%;
+      height: 150px;
+      background-image: url(../imgs/misc/_G7A8883.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .picture_packs {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+      .pp {
+        height: 750px;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin: 2rem;
+        p {
+          padding: 1rem;
+        }
+        li {
+          font-style: italic;
+          margin: 6px 0px;
+        }
+        h3 {
+          padding: 1rem;
+          text-transform: uppercase;
+          text-decoration: underline;
+          text-underline-offset: 1rem;
+          letter-spacing: 2px;
+          color: $styled-text;
+          font-size: 24px;
+        }
+      }
+      .picture_pack3 {
+        height: 850px;
+      }
+    }
+    //PICTURE PRICE CONTAINER End
+    //VIDEO PRICE CONTAINER Start
+    .flim_pack_container {
+      background-color: $background-2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 4rem;
+      .filmpack_blurb {
+        width: 80%;
+        text-align: center;
+      }
+      .film_packs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        .film_pack1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 700px;
+          border-bottom: 1px solid black;
+          width: 100%;
+          margin: 2rem;
+          li {
+            font-style: italic;
+            margin: 6px 0px;
+          }
+          p {
+            padding: 1rem;
+            font-size: 16px;
+          }
+          h3 {
+            padding: 1rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            letter-spacing: 2px;
+            color: $styled-text;
+            font-size: 24px;
+          }
+        }
+        .film_pack2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 700px;
+          border-bottom: 1px solid black;
+          width: 100%;
+          margin: 2rem;
+          li {
+            font-style: italic;
+            margin: 6px 0px;
+          }
+          p {
+            padding: 1rem;
+            font-size: 16px;
+          }
+          h3 {
+            padding: 1rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            letter-spacing: 2px;
+            color: $styled-text;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    //VIDEO PRICE CONTAINER End
+    //TILBEHØR PRICE CONTAINER Start
+    .tilbehør_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 4rem;
+      .tilbehør_content_box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        .tilbehør_content {
+          width: 300px;
+          height: 150px;
+          padding: 1rem;
+          margin: 0.5rem;
+          background-color: $background-2;
+          h4 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 2px;
+            color: $styled-text;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    //TILBEHØR PRICE CONTAINER End
+  }
+  //WEDDING PRICE CONTAINER End
+  //KONFIRMANT PRICE CONTAINER Start
+  .konfirmant_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: $background-2;
+    margin-bottom: 4rem;
+    h2 {
+      font-size: 28px;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      font-family: Cormorant + Garamond;
+      text-decoration: underline 1px;
+      text-underline-offset: 1rem;
+      color: $text;
+    }
+    p {
+      width: 50%;
+      text-align: center;
+    }
+    .konfirmant_bilder {
+    }
+    .konfirmant_content_box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      .konfirmant_content {
+        width: 250px;
+        height: 120px;
+        padding: 1rem;
+        margin: 0.5rem;
+        background-color: $background-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+          text-transform: uppercase;
+          text-decoration: underline;
+          letter-spacing: 2px;
+          color: $styled-text;
+          font-size: 16px;
+          margin: 0;
+        }
+        p {
+          text-align: start;
+          margin: 0;
+        }
+      }
+    }
+  }
+  //KONFIRMANT PRICE CONTAINER End
+  //PORTRAITS PRICE CONTAINER Start
+  .portraits_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 4rem;
+    h2 {
+      font-size: 28px;
+      letter-spacing: 12px;
+      text-transform: uppercase;
+      font-family: Cormorant + Garamond;
+      text-decoration: underline 1px;
+      color: $text;
+      text-align: center;
+    }
+    p {
+      width: 50%;
+      text-align: center;
+    }
+    .portraits_boxes {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-bottom: 1px solid black;
+      .portraits_box {
+        min-width: 300px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          text-transform: uppercase;
+          text-decoration: underline;
+          letter-spacing: 2px;
+          color: $styled-text;
+          font-size: 16px;
+          margin: 0;
+        }
+        p {
+          margin: 4px;
+        }
+      }
+    }
+  }
+  //PORTRAITS PRICE CONTAINER End
+}
+
+@media only screen and (min-width: 1100px) {
+  .price_container {
+    //WEDDING PRICE CONTAINER Start
+    .price_bryllup_container {
+      width: 1200px;
+      .price_bryllup_img {
+        height: 450px;
+      }
+      .picture_packs {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .pp {
+          width: 40%;
+          height: 650px;
+        }
+        .picture_pack3 {
+          width: 1100px;
+          height: 600px;
+        }
+      }
+      //VIDEO PRICE CONTAINER Start
+      .flim_pack_container {
+        .film_packs {
+          .film_pack1 {
+            border-bottom: 1px solid black;
+            width: 40%;
+            height: 600px;
+          }
+          .film_pack2 {
+            border-bottom: 1px solid black;
+            width: 40%;
+            height: 600px;
+          }
+        }
+      }
+      //VIDEO PRICE CONTAINER End
+    }
+    //WEDDING PRICE CONTAINER End
+    //PORTRAITS PRICE CONTAINER Start
+    .portraits_container {
+      width: 1200px;
+      h2 {
+      }
+      p {
+      }
+      .portraits_boxes {
+        .portraits_box {
+          h4 {
+          }
+          p {
+          }
+        }
+      }
+    }
+    //PORTRAITS PRICE CONTAINER End
+  }
+}
